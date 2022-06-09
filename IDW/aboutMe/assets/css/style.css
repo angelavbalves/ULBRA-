@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Beau+Rivage&family=Inconsolata&family=Mukta:wght@200&family=Noto+Sans:wght@300;700&family=Oswald:wght@200;600&family=Poppins:wght@200&family=Titillium+Web:wght@300;400&display=swap');
+body {
+    font-family: 'Oswald', sans-serif;
+    margin: 0 auto;
+}
+header {
+    background-color: white;
+    padding-top: 20px;
+}
+h1 {
+    margin-left: 20px;
+    color: #012b83;
+    margin-bottom: 0;
+    padding: 0;
+}
+h1::before {
+    content: "❏";
+}
+h2 {
+    color: #000;
+    font-size: 70px;
+}
+h3 {
+    padding: 0px;
+    margin-left: 20px;
+    color: black;
+    font-size: 40px;
+}
+h4 span {
+    color: black;
+    font-size: 13px;
+}
+nav {
+    margin-right: 40px;
+    text-align: right;
+}
+p {
+    text-align: justify;
+}
+li {
+    display: inline-block;
+    list-style-type: none;
+}
+li a {
+    text-decoration: none;
+    color: black;
+}
+li a:hover {
+    background-color:#012b83;
+    color: white;
+    padding: 10px;
+} 
+.button:hover {
+    background-color: #012b83;
+    color: white;
+}
+footer {
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+    color: darkgrey;
+    font-size: 10px;
+}
+section {
+    width: 100%;
+    height: 800px;
+    background-image: linear-gradient(to right, #e4dccc 45%, white 40%);
+    display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.divInformacoes {
+    height: 400px;
+    width: 750px; 
+    display: flex;
+    margin: 0 auto;
+    box-shadow: -50px -16px #cddbeb;
+}
+.button {
+    border: #012b83 2px solid;
+    text-align: center;
+    border-radius: 30px;
+    width: 45%;
+    margin-right: 5px;
+    float: right;
+    color: black;
+}
+.titulo {
+    color: darkgray;
+    font-weight: lighter;
+    font-size: 15px;
+    padding: 0;
+}
+
+#divTexto {
+    background-color: white;
+    width: 55%;
+    padding: 10px;
+    height: 100%;
+}
+
+#divRedesSociais a img {
+    width: 30px;
+    height: 30px;
+}
+#divFoto {
+    padding: 10px 20px 10px 20px;
+    height: 100%;
+    width: 45%;
+    background-color: #637cb4;
+    text-align: center;
+}
+#divFoto img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+#cardTexto {
+    font-size: 20px;
+    font-weight: lighter;
+    color: #012b83;
+}
+
+@media(max-width: 600px) {
+    section {
+        flex-wrap: wrap;
+    }
+    nav {
+        width: 100%;
+    }
+    article {
+        width: 100%;
+    }
+}

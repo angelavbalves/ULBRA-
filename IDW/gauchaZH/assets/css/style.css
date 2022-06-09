@@ -1,0 +1,40 @@
+body {
+    text-align: justify;
+}
+header {
+    background-color: #efe1d1;
+}
+h1 {
+    font-size: 70px;
+}
+footer {
+    background-color: #efbc98;
+}
+p.atualizacao{
+    font-size: 10px;
+}
+.imgNoticia {
+    width: 300px;
+    height: 200px;
+}
+i {
+    font-size: 20px;
+    color: #fff;
+}
+.imgColunista {
+    width: 50px;
+    height: 50px;
+}
+.colunistas {
+    display: flex;
+    align-items: center;
+}
+p.descricao {
+    font-size: 12px;
+}
+.tema {
+    color: #c8c8a9;
+}
+h5.corTexto, header {
+    color: #e4a691;
+}

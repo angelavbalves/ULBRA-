@@ -1,0 +1,32 @@
+
+article.flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+h3 {
+    padding: 8px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    box-shadow: 0 0 1em darkgray;
+    border-left: 8px solid #012b83;
+}
+.divImgProj {
+    height: 100%;
+    width: 50%;
+    image-rendering: optimizeQuality;
+    
+}
+.project {
+    line-height: 40px;
+    text-align: justify;
+    padding-left: 6px;
+    padding-right: 6px;
+}
+
+#descricao {
+    font-weight: lighter;
+    font-size: 15px;
+    width: 50%;
+    margin: 0 auto;
+}
