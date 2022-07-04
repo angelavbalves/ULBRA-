@@ -1,0 +1,59 @@
+body {
+    font-family:'Courier New', Courier, monospace;
+}
+header, footer {
+    background-color: #729071;
+}
+.nav-link {
+    color: #729071;
+}
+.nav-link:hover, .nav-link.active {
+    color: black;
+}
+
+.linkFooter {
+    color: white;
+}
+.capa {
+    background-image: url('../img/bgMenor.png');
+    min-height: 450px;
+    background-size: cover;
+}
+.sucessos {
+    color: #354935;
+}
+a {
+    color: black;
+    text-decoration: none;
+}
+a:hover {
+    color: black;
+    text-decoration: underline;
+}
+.foto {
+    height: 70%;
+    min-height: 50px;
+    background-size: cover;
+}
+.significado {
+    text-align: justify;
+    text-indent: 2em;
+    line-height: 2.5;
+}
+.btn {
+    background-color: #729071;
+}
+.logo {
+    width: 70%;
+    height: 100%;
+}
+.redes {
+    font-size: 30px;
+}
+.bi {
+    color: white;
+}
+.card {
+    height: 95%;
+    text-align: center;
+}
