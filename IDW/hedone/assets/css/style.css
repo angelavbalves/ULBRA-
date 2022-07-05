@@ -4,13 +4,20 @@ body {
 header, footer {
     background-color: #729071;
 }
+a {
+    color: black;
+    text-decoration: none;
+}
+a:hover {
+    color: black;
+    text-decoration: underline;
+}
 .nav-link {
     color: #729071;
 }
 .nav-link:hover, .nav-link.active {
     color: black;
 }
-
 .linkFooter {
     color: white;
 }
@@ -34,14 +41,7 @@ header, footer {
 .sucessos {
     color: #354935;
 }
-a {
-    color: black;
-    text-decoration: none;
-}
-a:hover {
-    color: black;
-    text-decoration: underline;
-}
+
 .foto {
     height: 70%;
     min-height: 50px;
@@ -62,8 +62,12 @@ a:hover {
 .redes {
     font-size: 30px;
 }
-.bi {
+.redesIcon {
     color: white;
+}
+.iconsPoliticas {
+    font-size: 80px;
+    color: gray;
 }
 .card {
     height: 100%;
@@ -83,4 +87,15 @@ a:hover {
     opacity: 1;
     width: 30px;
     height: 40px;
+}
+.politicas {
+    text-align: justify;
+    width: 90%;
+    text-indent: 2em;
+    line-height: 1.5;
+}
+.divDivisoria {
+    height: 3px;
+    background-color: #729071;
+    width: 100%;
 }

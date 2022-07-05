@@ -9,7 +9,7 @@ $(document).ready(() => {
         $('.menuDados').removeClass('active');
         $('.menuRecado').removeClass('active');
         $('.menuColecao').removeClass('active');
-        $('#botao').removeClass('acitve');
+        $('.menuPoliticas').removeClass('active');
     }
 
     $('.menuHome').click(() => {
@@ -40,6 +40,12 @@ $(document).ready(() => {
         clearClass();
         $('.menuColecao').addClass('active');
         $('section').load('pages/colecao.html');
+    })
+
+    $('.menuPoliticas').click(() => {
+        clearClass();
+        $('.menuPoliticas').addClass('active');
+        $('section').load('pages/politicas.html');
     })
 })
 
