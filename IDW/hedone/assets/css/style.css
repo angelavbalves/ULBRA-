@@ -15,9 +15,21 @@ header, footer {
     color: white;
 }
 .capa {
-    background-image: url('../img/bgMenor.png');
-    min-height: 450px;
-    background-size: cover;
+    height: 530px;
+    margin-bottom: 60px;
+}
+.divImg {
+    position: relative;
+}
+.divCronometro {
+    position: absolute;
+    bottom: 100px;
+    height: 35%;
+    font-size: 40px;
+}
+.relogio {
+    background-color: white;
+    border-radius: 10px;
 }
 .sucessos {
     color: #354935;
@@ -54,6 +66,21 @@ a:hover {
     color: white;
 }
 .card {
-    height: 95%;
+    height: 100%;
     text-align: center;
+    flex: 1 1 150px;
+    margin: 5px;
+}
+.carousel-control-prev-icon { 
+    background-image:url("/assets/img/setaEsquerda.png"); 
+    opacity: 1;
+    width: 30px;
+    height: 40px;
+    position: absolute;
+}
+.carousel-control-next-icon {
+    background-image:url("/assets/img/setaDireita.png"); 
+    opacity: 1;
+    width: 30px;
+    height: 40px;
 }
