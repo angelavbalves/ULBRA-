@@ -24,28 +24,33 @@ a:hover {
 .capa {
     height: 530px;
     margin-bottom: 60px;
+    object-fit: contain;
+}
+.tituloDicas {
+    text-align: justify;
+}
+.dicas {
+    font-size: 10px;
+    text-align: justify;
+    color: gray;
 }
 .divImg {
     position: relative;
 }
-.divCronometro {
+.divCronometro, .desktop {
     position: absolute;
     bottom: 100px;
     height: 35%;
-    font-size: 40px;
-}
-.relogio {
-    background-color: white;
-    border-radius: 10px;
+    font-size: 2.25vw;
+    opacity: 1;
 }
 .sucessos {
     color: #354935;
 }
-
 .foto {
     height: 70%;
     min-height: 50px;
-    background-size: cover;
+    object-fit: contain;
 }
 .significado {
     text-align: justify;
@@ -56,8 +61,8 @@ a:hover {
     background-color: #729071;
 }
 .logo {
-    width: 70%;
-    height: 100%;
+    width: 40%;
+    height: 70%;
 }
 .redes {
     font-size: 30px;
@@ -74,6 +79,7 @@ a:hover {
     text-align: center;
     flex: 1 1 150px;
     margin: 5px;
+    width: 18rem;
 }
 .carousel-control-prev-icon { 
     background-image:url("/assets/img/setaEsquerda.png"); 
@@ -98,4 +104,39 @@ a:hover {
     height: 3px;
     background-color: #729071;
     width: 100%;
+}
+.modal {
+    position: fixed;
+    z-index: 10;
+    width: 40vw;
+    height: auto;
+    left: 30vw;
+    top: 5vw;
+    background-color: white;
+    transform: translateY(-25%);
+    padding: 1rem;
+    border: 1px solid silver;
+    box-shadow: 4px 4px 8px #354935;
+    border-radius: 10px;
+    display: none;
+    transition: opacity 200ms ease-out;
+}
+.modal>.modal-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.modal>.modal-footer {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 0.75em;
+}
+.fechar {
+    border-radius: 50%;
+    display: flex;
+    width: 2em;
+    height: 2em;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
 }

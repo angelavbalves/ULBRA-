@@ -1,37 +1,36 @@
 <div class="container text-center w-50">
-    <h1> Estamos ansiosos pela sua mensagem </h1> 
-    <hr>
-    
-    <form action="" id="myForm">
-        <div class="mt-3 mb-3 text-center">
-            <label class="form-label" for=""> Nome </label>
-            <input class="form-control" type="text" id="nome">
-        </div>
-        <div class="mt-3 mb-3">
-            <label class="form-label" for=""> Email </label>
-            <input class="form-control" type="email">
-        </div>
-        <div class="mt-3 mb-3">
-            <label class="form-label" for=""> Mensagem </label>
-            <textarea class="form-control" rows="4" id="mensagem"> </textarea>
-        </div>
-        <button type="button" class="btn text-white" data-bs-toggle="modal" data-bs-target="#myModal" id="enviar"> Enviar </button>
-        <!-- <button class="btn text-white" id="botao" type="button" action="#"> Submit </button> -->
-    </form>
-    <div class="modal" id="myModal">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h4 class="modal-title"> </h4>
-              <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-            </div>
-            <div class="modal-body">
-              Adoramos receber sua mensagem! <br> Responderemos em breve. <br> Obrigada pela preferência.
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-danger" data-bs-dismiss="modal"> OK </button>
-            </div>
-          </div>
-        </div>
+  <h1> Estamos ansiosos pela sua mensagem </h1> 
+  <hr>
+  
+  <form action="" id="myForm">
+      <div class="mt-3 mb-3 text-center form-group">
+          <label class="form-label" for=""> Nome </label>
+          <input class="form-control" placeholder="Digite seu nome completo" type="text" id="nome">
+          
       </div>
+      <div class="mt-3 mb-3 form-group">
+          <label class="form-label" for=""> Email </label>
+          <input class="form-control" placeholder="usuario@dominio.com" type="email" id="meuemail">
+      </div>
+      <div class="mt-3 mb-3 form-group">
+          <label class="form-label" for=""> Mensagem </label>
+          <textarea class="form-control" placeholder="Conte-nos como foi sua experiência em nosso site." rows="4" id="mensagem"></textarea>
+      </div>
+      <button type="button" class="btn text-white" id="enviar" onclick="verificar()"> Enviar </button>
+  </form>
+  <div class="modal" id="myModal">
+    <div class="modal-content">
+      <header class="modal-header p-3">
+        <h4>Obrigada pela preferência!</h4>
+        <button class="fechar" onclick="esconderModal()"> &times </button>
+      </header>
+      <div class="modal-body p-2">
+        <p>
+          Adoramos receber sua mensagem! <br> Responderemos em breve.
+        </p>
+      </div>
+      <div class="modal-footer">
+        <button class="fecharModal btn btn-default btn-md" onclick="esconderModal()">CONFIRMAR</button> 
+      </div>
+    </div>
 </div>
